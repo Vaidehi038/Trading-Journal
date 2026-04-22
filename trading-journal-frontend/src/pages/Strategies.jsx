@@ -99,7 +99,7 @@ function Strategies() {
           </div>
 
           <div className="mt-3">
-            <button className="btn btn-primary">
+            <button className="btn btn-success">
               Add Strategy
             </button>
           </div>
