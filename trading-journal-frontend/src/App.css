@@ -71,7 +71,8 @@ body {
   background: #f3f0ff;
   min-height: 100vh;
 }
-/* inner card */
+
+/*  inner card */
 .card.shadow-sm {
   border-radius: 16px;
 }
@@ -87,7 +88,7 @@ body {
 }
 
 label {
-  color: #4b5563;
+  color: #4b5563; 
 }
 
 .d-flex.align-items-center label {
@@ -96,4 +97,15 @@ label {
 
 .card.border-0.shadow-sm {
   box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+}
+
+.table-scroll {
+  max-height: 300px;  
+  overflow-y: auto;
+  padding-right: 5px;
+}
+.table-scroll thead {
+  position: sticky;
+  top: 0;
+  background: white;
 }

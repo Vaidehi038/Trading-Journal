@@ -59,7 +59,7 @@ function Trades() {
     Trade Entry
   </h5>
 
-  {/* INNER CARD */}
+  {/* INNER CARD  */}
   <div className="card border-0 shadow-sm p-4">
 
     <form onSubmit={handleSubmit}>

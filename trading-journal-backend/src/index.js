@@ -27,11 +27,11 @@ app.get("/test-db", async (req, res) => {
 
 app.post("/strategies", async (req, res) => {
   try {
-    const { label, description } = req.body;
+    const { name, description } = req.body;
 
     const result = await pool.query(
-      "INSERT INTO strategies (label, description) VALUES ($1, $2) RETURNING *",
-      [label, description]
+      "INSERT INTO strategies (name, description) VALUES ($1, $2) RETURNING *",
+      [name, description]
     );
 
     res.status(201).json(result.rows[0]);
