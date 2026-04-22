@@ -31,7 +31,7 @@ CREATE DATABASE trading_journal;
 3. Connect to database
 \c trading_journal
 
-4. Run Tables
+4. Create Tables
 
 CREATE TABLE strategies (
   id SERIAL PRIMARY KEY,
