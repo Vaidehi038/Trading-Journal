@@ -110,3 +110,48 @@ label {
   top: 0;
   background: white;
 }
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+}
+.calendar-header {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: 600;
+  color: #6b7280;
+}
+
+.calendar-day-name {
+  padding: 5px 0;
+}
+
+.calendar-cell {
+  background: #f8f9fa;
+  border-radius: 10px;
+  padding: 12px;
+  min-height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.calendar-date {
+  font-weight: 600;
+}
+
+.calendar-pnl.profit {
+  color: green;
+  font-weight: 600;
+}
+
+.calendar-pnl.loss {
+  color: red;
+  font-weight: 600;
+}
+.calendar-cell.empty {
+  background: transparent;
+  box-shadow: none;
+}
